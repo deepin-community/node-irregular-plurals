@@ -1,5 +1,80 @@
-template-repository (1.0-1) unstable; urgency=medium
+node-irregular-plurals (3.3.0-1) unstable; urgency=medium
 
-  * Initial release
+  * Team upload
+  * Update standards version to 4.6.0, no changes needed.
+  * Fix GitHub tags regex
+  * Fix filenamemangle
+  * Drop dependency to nodejs
+  * New upstream version 3.3.0
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Yadd <yadd@debian.org>  Tue, 09 Nov 2021 17:59:51 +0100
+
+node-irregular-plurals (3.2.0-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Remove obsolete fields Contact, Name from debian/upstream/metadata
+    (already present in machine-readable debian/copyright).
+  * Update standards version to 4.5.0, no changes needed.
+
+  [ Xavier Guimard ]
+  * Bump debhelper compatibility level to 13
+  * Declare compliance with policy 4.5.1
+  * Modernize debian/watch
+  * Use dh-sequence-nodejs
+  * New upstream version 3.2.0
+
+ -- Xavier Guimard <yadd@debian.org>  Fri, 15 Jan 2021 23:06:36 +0100
+
+node-irregular-plurals (3.1.0-1) unstable; urgency=medium
+
+  * Team upload
+  * Bump debhelper compatibility level to 12
+  * Add debian/gbp.conf
+  * Declare compliance with policy 4.4.1
+  * Add "Rules-Requires-Root: no"
+  * New upstream version 3.1.0
+  * Update test patch
+
+ -- Xavier Guimard <yadd@debian.org>  Mon, 02 Dec 2019 21:17:05 +0100
+
+node-irregular-plurals (2.0.0-2) unstable; urgency=medium
+
+  * Reupload to unstable
+  * Add patch to switch test from ava to tape
+  * Bump Standards-Version to 4.4.0 and debhelper to 12
+  * Switch install to pkg-js-tools
+
+ -- Utkarsh Gupta <guptautkarsh2102@gmail.com>  Sun, 11 Aug 2019 19:42:54 +0530
+
+node-irregular-plurals (2.0.0-1) experimental; urgency=medium
+
+  [ Utkarsh Gupta ]
+  * New upstream version 2.0.0
+  * Bump debhelper compatibility level to 11
+  * Bump Standards-Version to 4.3.0 (no changes needed)
+  * Add d/upstream/metadata
+  * Add myself as an uploader
+  * Update d/copyright and d/rules
+  * Update d/control
+
+  [ Xavier Guimard ]
+  * Fix install
+  * Switch minimal test to pkg-js-tools
+  * Add Multi-Arch: foreign
+
+ -- Utkarsh Gupta <guptautkarsh2102@gmail.com>  Sun, 17 Mar 2019 22:35:04 +0100
+
+node-irregular-plurals (1.2.0-2) unstable; urgency=medium
+
+  * Team upload
+  * Reupload to unstable
+
+ -- Pirate Praveen <praveen@debian.org>  Sun, 10 Sep 2017 13:56:08 +0530
+
+node-irregular-plurals (1.2.0-1) experimental; urgency=low
+
+  * Initial release (Closes: #853279)
+
+ -- Abhishek Lolage <abhisheklolage@gmail.com>  Tue, 31 Jan 2017 12:04:49 +0000

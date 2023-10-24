@@ -1,0 +1,27 @@
+Description: Switch test from ava to tape
+Author: Utkarsh Gupta <guptautkarsh2102@gmail.com>
+Forwarded: not-needed
+Reviewed-By: Xavier Guimard <yadd@debian.org>
+Last-Update: 2019-12-02
+
+--- a/test.js
++++ b/test.js
+@@ -1,9 +1,10 @@
+-import test from 'ava';
+-import irregularPlurals from '.';
++const test = require('tape');
++const irregularPlurals = require('.');
+ 
+ test('main', t => {
+ 	t.true(irregularPlurals.has('calf'));
+ 	t.is(irregularPlurals.get('calf'), 'calves');
++	t.end();
+ });
+ 
+ test('isolated', t => {
+@@ -14,4 +15,5 @@
+ 	t.false(fresh1.has('calf'));
+ 	t.true(fresh2.has('calf'));
+ 	t.true(irregularPlurals.has('calf'));
++	t.end();
+ });
